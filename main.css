@@ -1,0 +1,262 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color: #2d3436;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom:20px;
+}
+
+/* NAVIGATION */
+.nav-logo a {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding:0 10px;
+}
+
+nav a {
+  color:#ffffff;
+  text-decoration: none;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight:normal;
+  font-size:18px;
+}
+
+nav a:hover {
+  color: #0984e3;
+  transition: ease-in 0.2s;
+}
+
+.nav-socials i {
+  font-size:28px;
+}
+
+.nav-socials li:last-child {
+  padding-right:0;
+}
+
+/* PAGE CONTAINER */
+.page-container {
+  margin: auto;
+  width:90%;
+  padding-top:20px;
+}
+
+.bg-top-image img {
+  width:100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* SPLASH */
+.splash-container {
+  padding: 60px 0;
+}
+
+.splash-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-left {
+  padding-right:100px;
+}
+
+.splash-header h1 {
+  font-size: 2.8rem;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  color:#ffffff;
+}
+
+.splash-text {
+  font-size: 18px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  padding: 10px 0 30px 0;
+  color:#ffffff
+}
+
+.bym {
+  color: #00aae7;
+  text-decoration: none;
+}
+
+.splash-button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.splash-button {
+  padding:0 20px 20px 0;
+}
+
+.splash-button-inner {
+  padding:15px 10px;
+  background-color: #ffffff;
+  width: 160px;
+  border-radius: 5px;
+}
+
+.splash-button-text {
+  color:#0984e3;
+  text-align: center;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.splash-button-secondary {
+  padding-bottom:20px;
+}
+
+.splash-button-secondary-inner {
+  padding:15px 10px;
+  background-color: #0984e3;
+  width: 160px;
+  border-radius: 5px;
+}
+
+.splash-button-secondary-text {
+  color:#ffffff;
+  text-align: center;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.projects-container {
+  padding: 0 0 20px 0;
+}
+
+.projects-container-bg {
+  background-color: #0984e3;
+}
+
+.projects-header h1 {
+  color:#ffffff;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  font-size:7rem;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+.projects-intro-text p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.project-window {
+  padding-top:40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.project-box {
+  padding:10px;
+}
+
+.project-box-header h2 {
+  text-align: center;
+  padding-bottom:10px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.project-box-header a {
+text-decoration: none;
+color: #ffffff;
+}
+
+.project-box-img img {
+  border-radius: 8px 8px 0 0;
+  width:100%;
+  display: block;
+}
+
+.project-box-button {
+  display: flex;
+  justify-content: center;
+}
+
+.project-box-button a {
+  text-decoration: none;
+  padding: 15px 35px; 
+  background-color: #ffffff50; 
+  color: #fff; 
+  text-transform: uppercase; 
+  letter-spacing: -.2px; 
+  text-decoration: none; 
+  font-family: helvetica,arial,sans-serif; 
+  border-radius: 0 0 5px 5px; 
+  font-size: 12px;
+  width:100%;
+  text-align: center;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:before {
+  content: '•';
+  font-size: 22px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: .25;
+  color: #ffffff;
+}
+
+.slick-active button:before {
+  color:#ffffff !important;
+  opacity: 1 !important;
+}

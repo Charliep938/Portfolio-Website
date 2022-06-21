@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Charlie Pates</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+
+</head>
+
+<body>
+  <div class="page-container">
+    <!--Navigation Bar-->
+    <div class="nav-container">
+      <nav>
+        <div class="nav-logo">
+          <a href="index.html">CHARLIE PATES</a>
+        </div>
+        <ul class="nav-center">
+          <li><a href="#">PROJECTS</a></li>
+          <li><a href="index.html">CONTACT</a></li>
+        </ul>
+        <div class="nav-socials">
+          <li><a href="index.html"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="index.html"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </div>
+      </nav>
+    </div>
+    <!--MAIN SPLASH SECTION-->
+    <div class="splash-container">
+      <div class="splash-inner">
+        <div class="splash-left">
+          <div class="splash-header">
+            <h1>
+              DIGITAL&nbsp;<span style="color:#0984e3">DESIGNER&nbsp;</span><span style="color:#0984e3">/</span>/&nbsp;FRONTEND&nbsp;<span style="color:#0984e3">DEVELOPER&nbsp;</span><span style="color:#0984e3">/</span>/&nbsp;TEAM&nbsp;<span style="color:#0984e3">LEADER</span>
+            </h1>
+          </div>
+          <div class="splash-text">
+            <p>
+              Hi i'm Charlie. 
+              <br/><br/>
+              Seasoned Digital Designer with 3 years experience working with HTML/CSS and Javascript. Offering strong coding skills and working experience with SQL (MySQL or Transact-SQL).
+              <br/><br/>
+              I currently work as a team leader for the market leading software company <a href="https://briefyourmarket.com/" target="_blank" class="bym">BriefYourMarket</a>.
+            </p>
+          </div>
+          <div class="splash-button-container">
+            <div class="splash-button">
+              <div class="splash-button-inner">
+                <div class="splash-button-text">
+                  View my projects
+                </div>
+              </div>
+            </div>
+            <div class="splash-button-secondary">
+              <div class="splash-button-secondary-inner">
+                <div class="splash-button-secondary-text">
+                  Contact me
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="splash-right">
+          <img src="img/portrait.png" width="450" alt="portrait-image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-top-image">
+    <img src="img/bg-top-image.png" alt="">
+  </div>
+  <!--PROJECTS SECTION-->
+  <div class="projects-container-bg">
+    <div class="page-container">
+      <div class="projects-container">
+        <div class="projects-inner">
+          <div class="projects-header">
+            <h1>MY PROJECTS</h1>
+          </div>
+          <div class="projects-intro-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet metus aliquet orci rutrum tincidunt ut nec orci. Aliquam mattis quam nisi, nec ornare dui commodo nec.</p>
+          </div>
+          <div class="project-window">
+            <div class="project-box">
+              <div class="project-box-header">
+                <h2>
+                  <a href="CRYPTOOLS/index.html" target="_blank">
+                    CRYPTOOLS
+                  </a>
+                </h2>
+              </div>
+              <div class="project-box-img">
+                <a href="CRYPTOOLS/index.html" target="_blank">
+                  <img src="img/Projects/Cryptools.png" alt="">
+                </a>
+              </div>
+              <div class="project-box-button">
+                <a href="CRYPTOOLS/index.html" target="_blank">VIEW MORE</a>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="project-box-header">
+                <h2>
+                  React Weather App Project
+                </h2>
+              </div>
+              <div class="project-box-img">
+                <img src="img/Projects/ReactWeather.png" alt="">
+              </div>
+              <div class="project-box-button">
+                <a href="CRYPTOOLS/index.html" target="_blank">VIEW MORE</a>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="project-box-header">
+                <h2>
+                  React Weather App Project
+                </h2>
+              </div>
+              <div class="project-box-img">
+                <img src="img/Projects/ReactWeather.png" alt="">
+              </div>
+              <div class="project-box-button">
+                <a href="CRYPTOOLS/index.html" target="_blank">VIEW MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-top-image">
+    <img src="img/bg-top-image-reverse.png" alt="">
+  </div>
+  <script src="index.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.project-window').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      autoplay: true,
+      autoplaySpeed: 1600,
+      dots: true,
+      arrows: false
+    });
+  </script>
+</body>
+
+</html>
