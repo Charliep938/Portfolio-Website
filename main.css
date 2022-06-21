@@ -103,6 +103,10 @@ nav a {
   text-decoration: none;
 }
 
+.bym:hover {
+  color: #00aae750;
+}
+
 .splash-button-container {
   display: flex;
   flex-direction: row;
