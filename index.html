@@ -16,6 +16,17 @@
 </head>
 
 <body>
+  <div class="wrapper-container">
+    <div class="wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <span>Loading</span>
+    </div>
+  </div>
   <div class="page-container">
     <!--Navigation Bar-->
     <div class="nav-container">
@@ -55,7 +66,7 @@
               coding skills and working experience with SQL (MySQL or Transact-SQL).
               <br /><br />
               I currently work as a team leader for the market leading software company <a
-                href="https://briefyourmarket.com/" target="_blank" class="bym">BriefYourMarket</a>.
+                href="https://briefyourmarket.com/" target="_blank" class="bym">BriefYourMarket.com</a>.
             </p>
           </div>
           <div class="splash-button-container">
@@ -71,7 +82,7 @@
             </div>
           </div>
         </div>
-        <div class="splash-right">
+        <div class="splash-right hover-rotate">
           <img src="img/portrait.png" width="450" alt="portrait-image">
         </div>
       </div>
@@ -106,9 +117,6 @@
                 <a href="CRYPTOOLS/index.html" target="_blank">
                   <img src="img/Projects/Cryptools.png" alt="">
                 </a>
-              </div>
-              <div class="project-box-button">
-                <a href="CRYPTOOLS/index.html" target="_blank">VIEW MORE</a>
               </div>
             </div>
           </div>
@@ -251,8 +259,8 @@
   <script>
     $('.project-window').slick({
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 4,
+      slidesToScroll: 4,
       autoplay: true,
       autoplaySpeed: 1600,
       dots: true,
@@ -363,6 +371,11 @@
       });
 
     });
+  </script>
+  <script>
+    $(window).on('load', function () {
+      $(".wrapper-container").fadeOut("slow");
+    });  
   </script>
 </body>
 
