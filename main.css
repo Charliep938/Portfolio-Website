@@ -186,6 +186,7 @@ nav .nav-center a {
 
 .nav-center a:hover, .nav-socials a:hover {
   color: #fff;
+  transition: 0.3s ease-in;
   box-shadow: inset 200px 0 0 0 #0984e3;
 }
 
@@ -410,6 +411,29 @@ nav .nav-center a {
   font-size:7rem;
   text-align: center;
   letter-spacing: 6px;
+}
+
+.skills-languages-header h1 {
+  color:#0984e3;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  font-size:3rem;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+.skills-languages {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-languages-item {
+  padding: 0 30px;
+}
+
+.skills-languages-item h2 {
+  font-size: 12px;
+  text-align:center;
+  padding-bottom:5px;
 }
 
 .contact-container-bg {
