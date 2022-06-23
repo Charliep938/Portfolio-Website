@@ -16,7 +16,7 @@ if(isset($_POST['submit'])) {
  $message2 = "Dear" . $name . "\n"
  . "Thank you for contacting us. We will get back to you shortly!" . "\n\n"
  . "You submitted the following message: " . "\n" . $_POST['message'] . "\n\n"
- . "Regards," . "\n" . "- Charlie Pates";
+ . "Kind Regards," . "\n" . "- Charlie Pates";
  
  //Email headers
  $headers = "From: " . $fromEmail; // Client email, I will receive
@@ -37,7 +37,6 @@ if(isset($_POST['submit'])) {
  
 }
 
-header("Location: http://charliepates.online/");
-die();
+
  
 ?>
