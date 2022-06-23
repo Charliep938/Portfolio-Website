@@ -721,6 +721,7 @@ input::placeholder {font-family: 'Open Sans', Arial, Helvetica, sans-serif}
   font-size:7rem;
   text-align: center;
   letter-spacing: 6px;
+  padding-bottom:40px;
 }
 
 .backto a {
@@ -735,4 +736,8 @@ input::placeholder {font-family: 'Open Sans', Arial, Helvetica, sans-serif}
   font-size: 14px;
   width:100%;
   text-align: center;
+}
+
+.backto a:hover {
+  background-color: #0984e350; 
 }
