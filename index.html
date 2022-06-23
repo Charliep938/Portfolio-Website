@@ -1,3 +1,4 @@
+<?php include 'email-form.php';?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -289,6 +290,10 @@
               <div class="form-messagearea">
                 <textarea name="message" form="usrform" placeholder="Enter text here..." style="resize: none;"></textarea>
               </div>
+              <div>
+                <p class="success"> <?php echo $success;  ?></p>
+                <p class="failed"> <?php echo $failed;  ?></p>
+             </div>
               <input type="submit" value="Submit">
             </form>
           </div>
