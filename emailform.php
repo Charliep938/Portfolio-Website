@@ -44,7 +44,7 @@
   .page-container {
     padding:0 !important;
   }
-  .confirmation-container {
+  body {
     height: 100vh;
     background-color: #0984e3;
   }
