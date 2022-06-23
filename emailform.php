@@ -51,6 +51,9 @@ if($message_sent):
   <div class="thanks">
     thanks!
   </div>
+  <div class="backto">
+    <a href="http://charliepates.online">Back to website</a>
+  </div>
   <?php
   else:
   ?>
