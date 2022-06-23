@@ -46,6 +46,7 @@
   }
   .confirmation-container {
     height: 100vh;
+    background-color: #0984e3;
   }
 </style>
 
