@@ -48,7 +48,7 @@ if($message_sent):
   <div class="page-container">
   <div class="confirmation-container">
   <div class="thanks">
-    thanks!
+    <h1>thanks for contacting me!<br/><br/>I will be in touch shortly!</h1>
   </div>
   <div class="backto">
     <a href="http://charliepates.online">Back to website</a>

@@ -700,3 +700,11 @@ input::placeholder {font-family: 'Open Sans', Arial, Helvetica, sans-serif}
   display: flex;
   justify-content: center;
 }
+
+.thanks h1 {
+  color:#ffffff;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  font-size:7rem;
+  text-align: center;
+  letter-spacing: 6px;
+}
