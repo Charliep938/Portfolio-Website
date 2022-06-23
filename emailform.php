@@ -25,7 +25,7 @@
 ?>
 
 
-if($message_sent = true;) {
+
   <!DOCTYPE html>
 
 <html lang="en">
@@ -45,9 +45,10 @@ if($message_sent = true;) {
 </head>
 
 <body>
+if($message_sent = true;) {
   <div class="thanks">
     thanks!
   </div>
+  if($message_sent = true;) {
 </body>
 </html>
-}
