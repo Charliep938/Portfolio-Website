@@ -40,6 +40,14 @@
   <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
 
 </head>
+<style type="text/css">
+  .page-container {
+    padding:0 !important;
+  }
+  .confirmation-container {
+    height: 100vh;
+  }
+</style>
 
 <body>
   <?php
