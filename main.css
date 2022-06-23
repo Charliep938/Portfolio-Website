@@ -701,7 +701,7 @@ input::placeholder {font-family: 'Open Sans', Arial, Helvetica, sans-serif}
 }
 
 
-.confirmation-container {
+.confirmation-container .backto {
   display: flex;
   justify-content: center;
   flex-direction: column;
