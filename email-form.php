@@ -36,5 +36,8 @@ if(isset($_POST['submit'])) {
   }
  
 }
+
+header("Location: https://charliepates.online/index.html");
+die();
  
 ?>
