@@ -273,39 +273,14 @@
             </h1>
           </div>
           <div class="contact-form module">
-            <form action="email-form.php" method="post" id="usrform">
-              <div class="form-row">
-                <div class="form-group">
-                  <fieldset>
-                    <input type="text" name="name" placeholder="John Doe">
-                  </fieldset>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <fieldset>
-                    <input type="email" name="email" placeholder="example@gmail.com">
-                  </fieldset>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <fieldset>
-                    <input type="text" name="subject" placeholder="subject line">
-                  </fieldset>
-                </div>
-              </div>
-              <div class="form-messagearea">
-                <fieldset>
-                  <textarea name="message" placeholder="Enter your message here..." style="resize: none;"></textarea>
-                </fieldset>
-              </div>
-              <div>
-                <p class="success"> <?php echo $success;  ?></p>
-                <p class="failed"> <?php echo $failed;  ?></p>
-             </div>
-              <input type="submit" value="submit" data-submit="...Sending">
-            </form>
+            <form method="POST" action="emailform.php" id="contact-form">
+              <h2>Contact us</h2>
+              <p><label>First Name:</label> <input name="name" type="text" /></p>
+              <p><label>Email Address:</label> <input style="cursor: pointer;" name="email" type="text" /></p>
+              <p><label>Message:</label>  <textarea name="message"></textarea> </p>
+              
+              <p><input type="submit" value="Send" /></p>
+              </form>
           </div>
         </div>
       </div>
