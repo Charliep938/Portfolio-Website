@@ -699,6 +699,7 @@ input::placeholder {font-family: 'Open Sans', Arial, Helvetica, sans-serif}
 .confirmation-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .thanks h1 {
