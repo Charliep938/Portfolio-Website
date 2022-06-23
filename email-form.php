@@ -6,7 +6,7 @@ if(isset($_POST['submit'])) {
  $name = $_POST['name']; //getting customer name
  $fromEmail = $_POST['email']; //getting customer email
  $subject = $_POST['subject']; //getting subject line from client
- $subject2 = "Confirmation: Message was submitted successfully | HMA WebDesign"; // For customer confirmation
+ $subject2 = "Confirmation: Message was submitted successfully | Charlie Pates"; // For customer confirmation
  
  //Email body I will receive
  $message = "Client Name: " . $name . "\n"

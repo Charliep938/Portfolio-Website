@@ -274,17 +274,20 @@
             </h1>
           </div>
           <div class="contact-form module">
-            <form action="email-form.php" method="post" id="usrform">
+            <form action="" method="post" id="usrform">
               <div class="form-row">
                 <div class="form-group">
-                  <label for="fname">Name:</label><br>
                   <input type="text" id="name" name="name" placeholder="John Doe">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="lname">Email Address:</label><br>
                   <input type="text" id="email" name="email" placeholder="example@gmail.com"><br><br>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="subject" name="subject" placeholder="subject line"><br><br>
                 </div>
               </div>
               <div class="form-messagearea">
@@ -294,7 +297,7 @@
                 <p class="success"> <?php echo $success;  ?></p>
                 <p class="failed"> <?php echo $failed;  ?></p>
              </div>
-              <input type="submit" value="Submit">
+              <input type="submit" value="submit">
             </form>
           </div>
         </div>
