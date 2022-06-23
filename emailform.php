@@ -23,3 +23,10 @@
   }
 
 ?>
+
+
+if($message_sent = true;) {
+  <div class="thanks">
+    thanks!
+  </div>
+}
