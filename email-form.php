@@ -37,7 +37,7 @@ if(isset($_POST['submit'])) {
  
 }
 
-header("Location: https://charliepates.online/");
+header("Location: http://charliepates.online/");
 die();
  
 ?>
