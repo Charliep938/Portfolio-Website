@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -100,8 +101,7 @@
             <h1>MY PROJECTS</h1>
           </div>
           <div class="projects-intro-text module">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet metus aliquet orci rutrum tincidunt
-              ut nec orci. Aliquam mattis quam nisi, nec ornare dui commodo nec.</p>
+            <p>A showcase of the exciting projects I've worked on. Click on any of the images to view this project and take a tour!</p>
           </div>
           <div class="project-window module">
             <!--Cryptools-->
@@ -130,10 +130,10 @@
         </div>
       </div>
     </div>
-    <div id="skills-container-id" class="bg-top-image">
+    <div class="bg-top-image">
       <img src="img/bg-top-image-reverse-white.png" alt="">
     </div>
-    <div class="skills-container-bg">
+    <div id="skills-container-id" class="skills-container-bg">
       <div class="page-container">
         <div class="skills-container">
           <div class="skills-header module">
@@ -271,6 +271,26 @@
             <h1>
               CONTACT ME
             </h1>
+          </div>
+          <div class="contact-form module">
+            <form action="email-form.php" method="post" id="usrform">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Name:</label><br>
+                  <input type="text" id="name" name="name" placeholder="John Doe">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="lname">Email Address:</label><br>
+                  <input type="text" id="email" name="email" placeholder="example@gmail.com"><br><br>
+                </div>
+              </div>
+              <div class="form-messagearea">
+                <textarea name="message" form="usrform" placeholder="Enter text here..." style="resize: none;"></textarea>
+              </div>
+              <input type="submit" value="Submit">
+            </form>
           </div>
         </div>
       </div>

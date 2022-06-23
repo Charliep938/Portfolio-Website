@@ -338,6 +338,7 @@ nav .nav-center a {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  border-radius: 0.5em;
 }
 
 .content:hover .content-overlay{
@@ -431,7 +432,6 @@ nav .nav-center a {
 }
 
 .project-box-inner {
-  width:400px;
   margin:auto;
 }
 
@@ -572,6 +572,10 @@ nav .nav-center a {
   padding-bottom:20px;
 }
 
+.contact-container {
+  padding-bottom:40px;
+}
+
 
 .contact-header h1 {
   color:#ffffff;
@@ -579,7 +583,51 @@ nav .nav-center a {
   font-size:7rem;
   text-align: center;
   letter-spacing: 6px;
-  padding-bottom:200px;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-form input {
+  margin:10px 0;
+  padding:15px 30px;
+  text-align: center;
+  border-radius: 0.5em;
+  border: #ffffff;
+}
+
+.contact-form label {
+  color:#ffffff;
+  font-size:22px;
+}
+
+.form-row input {
+  width: 250px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group {
+  padding-right:20px;
+}
+
+.form-group:last-child {
+  padding-right:0px;
+}
+
+.form-messagearea textarea {
+  width:100%;
+  text-align: center;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size:12px;
+  vertical-align: middle;
+  padding: 30px 0;
+  border-radius: 0.5em;
 }
 
 .slick-dots {
@@ -589,8 +637,8 @@ nav .nav-center a {
 
 .slick-dots li {
   position: relative;
-  right:3px;
-  top:20px;
+  right:5px;
+  top:10px;
   display: inline-block;
   width: 10px;
   height: 20px;
