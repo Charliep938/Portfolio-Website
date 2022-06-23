@@ -1,12 +1,14 @@
 <?php
-
   $message_sent = false;
-  if(isset($_POST['email']) && $_POST['email'] !='' ) {
+  if(isset($_POST['email']) && $_POST['email'] !='' ) 
+  {
 
-    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
+    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) 
+    {
       $userName = $_POST['name'];
       $userEmail = $_POST['email'];
       $message = $_POST['message'];
+      $messageSubject = $_POST['A new form has been submitted']
     
       $to ="cpates93@gmail.com";
       $body = "";
@@ -19,15 +21,10 @@
 
       $message_sent = true;
     }
-
   }
-
 ?>
 
-
-
-  <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
