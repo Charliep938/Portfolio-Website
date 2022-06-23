@@ -643,6 +643,11 @@ input::placeholder {font-family: 'Open Sans', Arial, Helvetica, sans-serif}
 .form-button {
   background-color: #0984e3;
   color:#ffffff;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0984e350;
 }
 
 .slick-dots {
