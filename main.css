@@ -584,10 +584,17 @@ nav .nav-center a {
   text-align: center;
   letter-spacing: 6px;
 }
+
+.contact-container {
+  width:80%;
+  margin:auto;
+}
 .contact-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
+  width:100%;
 }
 
 .contact-form input {
@@ -596,38 +603,46 @@ nav .nav-center a {
   text-align: center;
   border-radius: 0.5em;
   border: #ffffff;
+  width:60%;
 }
 
-.contact-form label {
-  color:#ffffff;
-  font-size:22px;
-}
-
-.form-row input {
-  width: 250px;
-}
-
-.form-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.form-group {
-  padding-right:20px;
-}
-
-.form-group:last-child {
-  padding-right:0px;
-}
-
-.form-messagearea textarea {
-  width:100%;
-  text-align: center;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-size:12px;
-  vertical-align: middle;
-  padding: 30px 0;
+.form-field textarea {
+  margin:10px 0;
+  padding: 15px 30px;
+  width:60%;
   border-radius: 0.5em;
+  white-space: normal;
+  text-align: center;
+  -moz-text-align-last: center; /* Firefox 12+ */
+  text-align-last: center;
+  box-sizing: border-box;
+  resize: none;
+  overflow-y: hidden;
+}
+
+
+button, input, select, textarea {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+::-webkit-input-placeholder {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+:-moz-placeholder {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+::-moz-placeholder {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+:-ms-input-placeholder {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+textarea::placeholder {font-family: 'Open Sans', Arial, Helvetica, sans-serif}
+input::placeholder {font-family: 'Open Sans', Arial, Helvetica, sans-serif}
+
+.form-button {
+  background-color: #0984e3;
+  color:#ffffff;
 }
 
 .slick-dots {
