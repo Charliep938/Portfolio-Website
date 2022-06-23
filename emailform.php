@@ -8,7 +8,7 @@
       $userName = $_POST['name'];
       $userEmail = $_POST['email'];
       $message = $_POST['message'];
-      $messageSubject = $_POST['A new form has been submitted'];
+      $subject - $_POST['Subject test'];
     
       $to ="cpates93@gmail.com";
       $body = "";
