@@ -843,7 +843,7 @@ input::placeholder {
     padding:0;
     width: 100%;
   }
-  .contact-header h1 {
+  .contact-header h1, .projects-header h1 {
     color:#ffffff;
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
     font-size:4rem;
