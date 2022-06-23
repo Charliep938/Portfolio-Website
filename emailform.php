@@ -1,23 +1,25 @@
 <?php
 
-$errors = [];
+  $message_sent = false;
+  if(isset($_POST['email']) && $_POST['email'] !='' ) {
 
-if (!empty($_POST)) {
-   $name = $_POST['name'];
-   $email = $_POST['email'];
-   $message = $_POST['message'];
+    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
+      $userName = $_POST['name'];
+      $userEmail = $_POST['email'];
+      $message = $_POST['message'];
+    
+      $to ="cpates93@gmail.com";
+      $body = "";
+    
+      $body .= "From: ".$userName. "\r\n";
+      $body .= "Email: ".$userEmail. "\r\n";
+      $body .= "Message: ".$message. "\r\n";
+    
+      mail($to,$messageSubject,$body);
 
-   if (empty($name)) {
-       $errors[] = 'Name is empty';
-   }
+      $message_sent = true;
+    }
 
-   if (empty($email)) {
-       $errors[] = 'Email is empty';
-   } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-       $errors[] = 'Email is invalid';
-   }
+  }
 
-   if (empty($message)) {
-       $errors[] = 'Message is empty';
-   }
-}
+?>
