@@ -45,10 +45,20 @@
 </head>
 
 <body>
-if($message_sent = true;) {
+  <?php
+if($message_sent):
+  ?>
   <div class="thanks">
     thanks!
   </div>
-  if($message_sent = true;) {
+  <?php
+  else:
+  ?>
+  <div class="wrong">
+    wrong
+  </div>
+  <?php
+  endif;
+  ?>
 </body>
 </html>
