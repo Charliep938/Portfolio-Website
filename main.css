@@ -344,10 +344,9 @@ nav .nav-center a {
 .projects-header h1 {
   color:#ffffff;
   font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-  font-size:6rem;
+  font-size:1rem;
   text-align: center;
   letter-spacing: 6px;
-  max-height: 100000px;
 }
 
 .projects-intro-text p {
