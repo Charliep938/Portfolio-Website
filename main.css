@@ -814,6 +814,9 @@ input::placeholder {
     align-items: center !important;
     flex-direction: column !important;
   }
+  .flip {
+    flex-direction: column-reverse !important;
+  }
   .mobilepb10 {
     padding-bottom:10px !important;
   }
@@ -850,6 +853,9 @@ input::placeholder {
     text-align: center;
     letter-spacing: 6px;
   }
+  .skills-padding {
+    padding: 20px 0 0 0 !important;
+  }
   
 }
 
@@ -860,15 +866,14 @@ input::placeholder {
     
     }
 
-    .myCoolMenuOverlay {
+    .MenuOverlay {
       height: 100%;
       width: 0;
       position: fixed;
       z-index: 1;
       top: 0;
       left: 0;
-      background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0, 1);
+      background-color: #0984e3;
       overflow-x: hidden;
       transition: 0.5s;
       display: flex;
@@ -876,7 +881,7 @@ input::placeholder {
       align-items: center;
     }
     
-    .myCool-overlay-content {
+    .overlay-content {
 
       width: 100%;
       text-align: center;
@@ -886,20 +891,20 @@ input::placeholder {
       align-items: center;
     }
     
-    .myCoolMenuOverlay a {
+    .MenuOverlay a {
       padding: 0px;
       text-decoration: none;
       font-size: 26px;
-      color: #818181;
+      color: #ffffff;
       display: block;
       transition: 0.3s;
     }
     
-    .myCoolMenuOverlay a:hover, .myCoolMenuOverlay a:focus {
+    .MenuOverlay a:hover, .MenuOverlay a:focus {
       color: #f1f1f1;
     }
     
-    .myCoolMenuOverlay .closeMyCoolBtn {
+    .MenuOverlay .closeBtn {
       position: absolute;
       top: 0px;
       right: 45px;
@@ -907,8 +912,8 @@ input::placeholder {
     }
     
     @media screen and (max-height: 450px) {
-      .myCoolMenuOverlay a {font-size: 20px}
-      .myCoolMenuOverlay .closeMyCoolBtn {
+      .MenuOverlay a {font-size: 20px}
+      .MenuOverlay .closeBtn {
       font-size: 60px;
       top: 15px;
       right: 35px;
@@ -921,6 +926,7 @@ input::placeholder {
       right:25px;
       color:#0984e3;
       display: none;
+      font-weight: bold;
     }
     
     .coolColumnMan {
