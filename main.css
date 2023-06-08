@@ -409,6 +409,21 @@ nav .nav-center a {
   text-align: center;
 }
 
+.github-link {
+  display: flex;
+  justify-content: center;
+}
+
+.github-link a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+}
+
+.github-link a:hover {
+  color: #ffffff70;
+}
+
 /*PROJECT CONTENT*/
 .content {
   position: relative;
