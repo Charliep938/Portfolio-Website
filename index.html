@@ -202,7 +202,8 @@
                   </a>
                 </div>
                 <div class="github-link">
-                  <a href="https://github.com/Charliep938/next-js-strava-user-dashboard" target="_blank">See code on Github</a>
+                  <a href="https://github.com/Charliep938/next-js-strava-user-dashboard" target="_blank">See code on
+                    Github</a>
                 </div>
               </div>
             </div>
@@ -473,17 +474,17 @@
           <div class="contact-form module">
             <form method="POST" action="emailform.php" id="contact-form">
               <div class="form-field">
-                <input name="name" placeholder="Enter Name" type="text" />
+                <input name="name" id="name" placeholder="Enter Name" type="text" />
               </div>
               <div class="form-field">
-                <input style="cursor: pointer;" name="email" placeholder="Enter Email Address" type="text" />
+                <input style="cursor: pointer;" id="email" name="email" placeholder="Enter Email Address" type="text" />
               </div>
               <div class="form-field">
-                <textarea name="message" rows="1" placeholder="Enter your message..." maxlength="400" id="myTextarea"
+                <textarea id="message" name="message" rows="1" placeholder="Enter your message..." maxlength="400" id="myTextarea"
                   style="resize:none"></textarea>
               </div>
-              <div class="g-recaptcha form-field" data-sitekey="6Ld2YJAmAAAAAL-qwkgyxNrlhvzU_VCOaMDNPo2L"></div>
-              <input class="form-button" type="submit" value="Send" />
+              <button class="g-recaptcha form-button" data-sitekey="6Ld2YJAmAAAAAL-qwkgyxNrlhvzU_VCOaMDNPo2L"
+                data-callback='onSubmit' data-action='submit'>Submit</button>
             </form>
           </div>
         </div>
@@ -693,18 +694,46 @@
       $(".wrapper-container").fadeOut("slow");
     });  
   </script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   <script>
-    function onClick(e) {
-      e.preventDefault();
-      grecaptcha.enterprise.ready(async () => {
-        const token = await grecaptcha.enterprise.execute('6LdN7I8mAAAAAIFoMwV0ltfJTMRKP7gUbhuqp97C', {action: 'LOGIN'});
-        // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
-        // reCAPTCHA Enterprise to the end user's browser.
-        // This token must be validated by creating an assessment.
-        // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
-      });
+    function onSubmit(token) {
+      document.getElementById("contact-form").submit();
     }
   </script>
+  <script>
+    // Get the form element
+    var form = document.getElementById('contact-form');
+  
+    // Add event listener for form submission
+    form.addEventListener('submit', function (event) {
+      // Prevent form submission
+      event.preventDefault();
+  
+      // Validate form fields
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+  
+      if (name === '') {
+        alert('Please enter your name.');
+        return;
+      }
+  
+      if (email === '') {
+        alert('Please enter your email address.');
+        return;
+      }
+  
+      if (message === '') {
+        alert('Please enter your message.');
+        return;
+      }
+  
+      // If all fields are valid, submit the form
+      form.submit();
+    });
+  </script>
+  
 </body>
 
 </html>
