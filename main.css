@@ -679,6 +679,13 @@ nav .nav-center a {
   width:60%;
 }
 
+.form-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .form-field textarea {
   margin:10px 0;
   padding: 15px 30px;
