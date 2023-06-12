@@ -725,9 +725,15 @@ input::placeholder {
 }
 
 .form-button {
+  width: 60%;
   background-color: #0984e3;
+  border: 1px solid #0984e3;
   color:#ffffff;
   cursor: pointer;
+  margin:10px 0;
+  padding: 15px 30px;
+  width:60%;
+  border-radius: 0.5em;
 }
 
 .form-button:hover {
